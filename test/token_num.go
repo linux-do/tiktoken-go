@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/pkoukk/tiktoken-go"
+	"github.com/linux-do/tiktoken-go"
 )
 
 // main

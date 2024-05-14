@@ -1,42 +1,54 @@
 # Encoding Test Result
 | python tiktoken                                          | golang tiktoken-go                                       |
 | :------------------------------------------------------- | :------------------------------------------------------- |
+| text: hallo world!, encoding: o200k_base, token: 4      | text: hallo world!, encoding: o200k_base, token: 4      |
 | text: hallo world!, encoding: cl100k_base, token: 4      | text: hallo world!, encoding: cl100k_base, token: 4      |
 | text: hallo world!, encoding: p50k_base, token: 4        | text: hallo world!, encoding: p50k_base, token: 4        |
 | text: hallo world!, encoding: r50k_base, token: 4        | text: hallo world!, encoding: r50k_base, token: 4        |
+| text: 你好世界！, encoding: o200k_base, token: 3        | text: 你好世界！, encoding: o200k_base, token: 3        |
 | text: 你好世界！, encoding: cl100k_base, token: 6        | text: 你好世界！, encoding: cl100k_base, token: 6        |
 | text: 你好世界！, encoding: p50k_base, token: 11         | text: 你好世界！, encoding: p50k_base, token: 11         |
 | text: 你好世界！, encoding: r50k_base, token: 11         | text: 你好世界！, encoding: r50k_base, token: 11         |
+| text: こんにちは世界！, encoding: o200k_base, token: 3  | text: こんにちは世界！, encoding: cl100k_base, token: 3  |
 | text: こんにちは世界！, encoding: cl100k_base, token: 5  | text: こんにちは世界！, encoding: cl100k_base, token: 5  |
 | text: こんにちは世界！, encoding: p50k_base, token: 13   | text: こんにちは世界！, encoding: p50k_base, token: 13   |
 | text: こんにちは世界！, encoding: r50k_base, token: 13   | text: こんにちは世界！, encoding: r50k_base, token: 13   |
+| text: 안녕하세요 세계!, encoding: o200k_base, token: 4 | text: 안녕하세요 세계!, encoding: o200k_base, token: 4 |
 | text: 안녕하세요 세계!, encoding: cl100k_base, token: 10 | text: 안녕하세요 세계!, encoding: cl100k_base, token: 10 |
 | text: 안녕하세요 세계!, encoding: p50k_base, token: 21   | text: 안녕하세요 세계!, encoding: p50k_base, token: 21   |
 | text: 안녕하세요 세계!, encoding: r50k_base, token: 21   | text: 안녕하세요 세계!, encoding: r50k_base, token: 21   |
+| text: Привет мир!, encoding: o200k_base, token: 4       | text: Привет мир!, encoding: cl100k_base, token: 4       |
 | text: Привет мир!, encoding: cl100k_base, token: 6       | text: Привет мир!, encoding: cl100k_base, token: 6       |
 | text: Привет мир!, encoding: p50k_base, token: 12        | text: Привет мир!, encoding: p50k_base, token: 12        |
 | text: Привет мир!, encoding: r50k_base, token: 12        | text: Привет мир!, encoding: r50k_base, token: 12        |
+| text: ¡Hola mundo!, encoding: o200k_base, token: 4      | text: ¡Hola mundo!, encoding: o200k_base, token: 4      |
 | text: ¡Hola mundo!, encoding: cl100k_base, token: 4      | text: ¡Hola mundo!, encoding: cl100k_base, token: 4      |
 | text: ¡Hola mundo!, encoding: p50k_base, token: 7        | text: ¡Hola mundo!, encoding: p50k_base, token: 7        |
 | text: ¡Hola mundo!, encoding: r50k_base, token: 7        | text: ¡Hola mundo!, encoding: r50k_base, token: 7        |
+| text: Hallo Welt!, encoding: o200k_base, token: 3       | text: Hallo Welt!, encoding: o200k_base, token: 3       |
 | text: Hallo Welt!, encoding: cl100k_base, token: 3       | text: Hallo Welt!, encoding: cl100k_base, token: 3       |
 | text: Hallo Welt!, encoding: p50k_base, token: 5         | text: Hallo Welt!, encoding: p50k_base, token: 5         |
 | text: Hallo Welt!, encoding: r50k_base, token: 5         | text: Hallo Welt!, encoding: r50k_base, token: 5         |
+| text: Bonjour le monde!, encoding: o200k_base, token: 4 | text: Bonjour le monde!, encoding: o200k_base, token: 4 |
 | text: Bonjour le monde!, encoding: cl100k_base, token: 4 | text: Bonjour le monde!, encoding: cl100k_base, token: 4 |
 | text: Bonjour le monde!, encoding: p50k_base, token: 7   | text: Bonjour le monde!, encoding: p50k_base, token: 7   |
 | text: Bonjour le monde!, encoding: r50k_base, token: 7   | text: Bonjour le monde!, encoding: r50k_base, token: 7   |
+| text: Ciao mondo!, encoding: o200k_base, token: 4       | text: Ciao mondo!, encoding: o200k_base, token: 4       |
 | text: Ciao mondo!, encoding: cl100k_base, token: 4       | text: Ciao mondo!, encoding: cl100k_base, token: 4       |
 | text: Ciao mondo!, encoding: p50k_base, token: 5         | text: Ciao mondo!, encoding: p50k_base, token: 5         |
 | text: Ciao mondo!, encoding: r50k_base, token: 5         | text: Ciao mondo!, encoding: r50k_base, token: 5         |
+| text: Hej världen!, encoding: cl100k_base, token: 3      | text: Hej världen!, encoding: o200k_base, token: 3      |
 | text: Hej världen!, encoding: cl100k_base, token: 7      | text: Hej världen!, encoding: cl100k_base, token: 7      |
 | text: Hej världen!, encoding: p50k_base, token: 8        | text: Hej världen!, encoding: p50k_base, token: 8        |
 | text: Hej världen!, encoding: r50k_base, token: 8        | text: Hej världen!, encoding: r50k_base, token: 8        |
+| text: Hallo wereld!, encoding: o200k_base, token: 3     | text: Hallo wereld!, encoding: o200k_base, token: 3     |
 | text: Hallo wereld!, encoding: cl100k_base, token: 3     | text: Hallo wereld!, encoding: cl100k_base, token: 3     |
 | text: Hallo wereld!, encoding: p50k_base, token: 5       | text: Hallo wereld!, encoding: p50k_base, token: 5       |
 | text: Hallo wereld!, encoding: r50k_base, token: 5       | text: Hallo wereld!, encoding: r50k_base, token: 5       |
 | text: Hallo verden!, encoding: cl100k_base, token: 4     | text: Hallo verden!, encoding: cl100k_base, token: 4     |
 | text: Hallo verden!, encoding: p50k_base, token: 5       | text: Hallo verden!, encoding: p50k_base, token: 5       |
 | text: Hallo verden!, encoding: r50k_base, token: 5       | text: Hallo verden!, encoding: r50k_base, token: 5       |
+| text: Hallo wereld!, encoding: o200k_base, token: 3     | text: Hallo wereld!, encoding: o200k_base, token: 3     |
 | text: Hallo wereld!, encoding: cl100k_base, token: 3     | text: Hallo wereld!, encoding: cl100k_base, token: 3     |
 | text: Hallo wereld!, encoding: p50k_base, token: 5       | text: Hallo wereld!, encoding: p50k_base, token: 5       |
 | text: Hallo wereld!, encoding: r50k_base, token: 5       | text: Hallo wereld!, encoding: r50k_base, token: 5       |

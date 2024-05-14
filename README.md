@@ -44,7 +44,7 @@ package main
 
 import (
     "fmt"
-    "github.com/pkoukk/tiktoken-go"
+    "github.com/linux-do/tiktoken-go"
 )
 
 func main()  {
@@ -76,7 +76,7 @@ package main
 
 import (
     "fmt"
-    "github.com/pkoukk/tiktoken-go"
+    "github.com/linux-do/tiktoken-go"
 )
 
 func main()  {
@@ -117,7 +117,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/pkoukk/tiktoken-go"
+	"github.com/linux-do/tiktoken-go"
 	"github.com/sashabaranov/go-openai"
 )
 
@@ -174,17 +174,20 @@ func NumTokensFromMessages(messages []openai.ChatCompletionMessage, model string
 
 
 # Available Encodings
- | Encoding name           | OpenAI models                                        |
- | ----------------------- | ---------------------------------------------------- |
- | `cl100k_base`           | `gpt-4`, `gpt-3.5-turbo`, `text-embedding-ada-002`   |
- | `p50k_base`             | Codex models, `text-davinci-002`, `text-davinci-003` |
- | `r50k_base` (or `gpt2`) | GPT-3 models like `davinci`                          |
+| Encoding name           | OpenAI models                                        |
+ |-------------------------|------------------------------------------------------|
+| `o200k_base`           | `gpt-4o`                                             |
+| `cl100k_base`           | `gpt-4`, `gpt-3.5-turbo`, `text-embedding-ada-002`   |
+| `cl100k_base`           | `text-embedding-3-large`, `text-embedding-3-small`   |
+| `p50k_base`             | Codex models, `text-davinci-002`, `text-davinci-003` |
+| `r50k_base` (or `gpt2`) | GPT-3 models like `davinci`                          |
 
 
 
 # Available Models
 | Model name                   | OpenAI models |
-| ---------------------------- | ------------- |
+|------------------------------| ------------- |
+| gpt-4o-*                     | o200k_base   |
 | gpt-4-*                      | cl100k_base   |
 | gpt-3.5-turbo-*              | cl100k_base   |
 | gpt-4                        | cl100k_base   |
@@ -208,6 +211,8 @@ func NumTokensFromMessages(messages []openai.ChatCompletionMessage, model string
 | text-davinci-edit-001        | p50k_edit     |
 | code-davinci-edit-001        | p50k_edit     |
 | text-embedding-ada-002       | cl100k_base   |
+| text-embedding-3-small       | cl100k_base   |
+| text-embedding-3-large       | cl100k_base   |
 | text-similarity-davinci-001  | r50k_base     |
 | text-similarity-curie-001    | r50k_base     |
 | text-similarity-babbage-001  | r50k_base     |
