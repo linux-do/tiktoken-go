@@ -8,7 +8,7 @@ tiktoken的原项目地址[tiktoken](https://github.com/openai/tiktoken).
 ## 安装
 
 ```bash
-go get github.com/pkoukk/tiktoken-go
+go get github.com/linux-do/tiktoken-go
 ```
 ## 缓存
 Tiktoken-go 和原始的 Tiktoken 库一样，具有相同的缓存机制。  

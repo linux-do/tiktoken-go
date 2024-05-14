@@ -11,7 +11,7 @@ This is a port of the original [tiktoken](https://github.com/openai/tiktoken).
 ## Install
 
 ```bash
-go get github.com/pkoukk/tiktoken-go
+go get github.com/linux-do/tiktoken-go
 ```
 ## Cache
 Tiktoken-go has the same cache mechanism as the original Tiktoken library.  
